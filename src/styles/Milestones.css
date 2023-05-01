@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* .spacer {
+  aspect-ratio: 960/600;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url("./wave-haikei.svg");
+  max-height: 300px;
+} */
+
+
+.milestone {
+  text-align: center;
+}
+
+.milestone h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.milestone p {
+  font-size: 16px;
+  color: #8d8d8d;
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .milestone {
+    margin-bottom: 30px;
+    width: 45%;
+  }
+
+  .milestone h2 {
+    font-size: 28px;
+  }
+
+  .milestone p {
+    font-size: 14px;
+  }
+}

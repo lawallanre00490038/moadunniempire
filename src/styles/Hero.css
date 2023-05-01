@@ -1,0 +1,195 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+/* Main styles */
+.new {
+  /* margin-top: 13.5rem; */
+  color: #999;
+  font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+  text-align: center;
+  /* img size is 50x50 */
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 0.92s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+/* .new::before {
+  content: "INFINITY";
+  font-size: 8rem;
+  font-weight: 100;
+  font-style: normal;
+} */
+
+
+
+
+.hero-bgd {
+  position: absolute;
+  color: #ac46e3;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 500px;
+
+  background: radial-gradient(#ac46e3 15%, transparent 16%), linear-gradient(45deg, transparent 49%, #ac46e3 49% 51%, transparent 51%), linear-gradient(-45deg, transparent 49%, #ac46e3 49% 51%, transparent 51%);
+  background-size: 1em 1em;
+  background-color: #ffffff;
+  opacity: 0.2;
+    
+  z-index: 0;
+}
+
+.hero-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+    padding-bottom: 30px;
+    height: 30%;
+    z-index: 999;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .hero .hero-image {
+    /* flex: 1 1 50%; */
+    text-align: center;
+     z-index: 999;
+  }
+  
+  .hero-image img {
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
+  }
+  
+  .hero-text {
+    /* flex: 1 1 50%; */
+    text-align: center;
+    padding: 20px;
+    color: #ac46e3;
+    z-index: 10;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+  
+  /* .hero-text button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  } */
+
+  .hero-text .btn {
+  border: 2px solid purple;
+  outline: 0;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  min-width: 170px;
+  display: inline-block;
+  color: purple;
+  text-align: center;
+  text-decoration: none;
+  z-index: 999;
+  background: none;
+}
+  .btn.btn-ghost {
+    color: #fff;
+    /* background: transparent; */
+  }
+
+
+  
+  @media (max-width: 768px) {
+    .hero-bgd {
+      min-height: 120vh;
+    }
+    .new {
+      min-height: 125vh;
+    }
+    .hero {
+      height: auto;
+      min-height: 100vh;
+    }
+  
+    .hero-image {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .hero-text {
+      flex-basis: 100%;
+      padding: 0 10px;
+    }
+  
+    .hero-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+  
+    .hero-text p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+  }
