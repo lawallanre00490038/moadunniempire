@@ -2,14 +2,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 150px;
 }
 
 .product-image {
-  /* flex-basis: 50%; */
-  /* width: 100%; */
-  padding: 3em 0;
-  background: #9b45d5;
+  height: auto;
 }
 
 .product-image img {

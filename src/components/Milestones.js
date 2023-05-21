@@ -6,12 +6,12 @@ const Milestones = () => {
     <section className="milestones">
       <div className="container">
         <div className="milestone">
-          <h2>10k+</h2>
+          <h2>50+</h2>
           <p>Happy Customers</p>
         </div>
         <div className="milestone">
-          <h2>500+</h2>
-          <p>Products</p>
+          <h2>200+</h2>
+          <p>Fashion wears</p>
         </div>
         <div className="milestone">
           <h2>5+</h2>
