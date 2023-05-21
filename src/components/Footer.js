@@ -13,7 +13,7 @@ function Footer() {
         </div>
         <div className='flex-1'>
           <div className='flex flex-col'>
-            <h3 className='md:self-end'>Connect With Us</h3>
+            <h3 className='md:self-end justify-start'>Connect With Us</h3>
             <div className='flex justify-start md:self-end'>
               <a href='path/to/facebook'><i className='fab fa-facebook mr-3'></i></a>
               <a href='path/to/twitter'><i className='fab fa-twitter mr-3'></i></a>
