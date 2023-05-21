@@ -18,13 +18,13 @@ const ProductDetails = (props) => {
   };
 
   return (
-    <div className="md:flex mt-10 md:my-40 md:justify-center md:items-center px-2">
+    <div className="md:flex mt-30 md:my-40 md:justify-center md:items-center px-2">
       <div className="product-image md:flex-1 px-5">
         <img src={product.image} alt={product.name} className='' />
       </div>
       <div className="md:flex-1">
         <div className='flex-1 py-1'>
-          <h1 className='text-4xl'>{product.name}</h1>
+          <h1 className='md:text-4xl text-2xl'>{product.name}</h1>
           <hr />
           <p className='text-left'>{product.description}</p>
           <p className="price"><span>Price: {product.price}</span></p>
