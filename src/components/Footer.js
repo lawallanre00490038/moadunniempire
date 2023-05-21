@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className='text-white bg-[#4c0082]'>
       <div className=' flex justify-between p-10 overflow-hidden'>
-        <div className='flex-1 mr-8 md:mr-0'>
+        <div className='flex-1 md:mr-0'>
           <h3>Mo'Adunni Fashion Store</h3>
           <p>Abina Omolulu Street</p>
           <p>Surulere, Lagos</p>
