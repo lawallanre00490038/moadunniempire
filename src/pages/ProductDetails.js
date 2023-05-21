@@ -18,15 +18,18 @@ const ProductDetails = (props) => {
   };
 
   return (
-    <div className="product-details">
+    <div className="md:flex my-4">
       <div className="product-image">
         <img src={product.image} alt={product.name} className='' />
       </div>
-      <div className="product-info">
-        <h1>{product.name}</h1>
-        <p>{product.description}</p>
-        <p className="price">{product.price}</p>
-        <button className="add-to-cart-btn text-sm" onClick={redirectToWhatsApp}>
+      <div className="">
+        <div className='flex-1 py-1'>
+          <h1 className=''>{product.name}</h1>
+          <hr />
+          <p className='text-left'>{product.description}</p>
+          <p className="price"><span>Price: {product.price}</span></p>
+        </div>
+        <button className="add-to-cart-btn text-sm h-[50px]" onClick={redirectToWhatsApp}>
           Order From Mo'Adunni Now
         </button>
       </div>

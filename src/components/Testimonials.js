@@ -10,12 +10,13 @@ function Testimonials() {
         <h2 className='text-center mb-6'>What Our Customers Are Saying</h2>
         <div className='testimonial'>
           <img src='images/testimonial/1.jpg' alt='Customer' />
-          <div>
+          <div className="w-100">
             <p>"I love the dress I bought from Mo'Adunni Empire's ready-to-wear collection. It was beautifully made and fit perfectly. I received so many compliments when I wore it to my friend's wedding"</p>
             <h3>Mrs. Toyin</h3>
           </div>
-          
         </div>
+
+        <hr />
         <div className='testimonial'>
           <img src='images/testimonial/3.jpg' alt='Customer' />
           <div>
